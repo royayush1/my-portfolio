@@ -7,7 +7,8 @@ import {Pacifico} from 'next/font/google';
 
 const pacifico = Pacifico({
   weight: "400",
-  style: "normal"
+  style: "normal",
+  subsets: ['latin']
 })
 
 const socialLinks = [
