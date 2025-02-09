@@ -41,6 +41,7 @@ export default function HomePage() {
           <h1 className={`${pacifico.className} text-5xl font-extrabold mb-4`}>Welcome to My Portfolio</h1>
           <p className='text-xl leading-relaxed'>
             Hi, I'm Ayush Roy. I create innovative solutions in Software Development, Data Science, and AI/ML.
+            Make your way to the projects page through the nav bar above to see what I've worked on!
           </p>
         </div>
       </motion.div>
