@@ -32,7 +32,7 @@ export default function HomePage() {
         className='flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-lg p-10'>
         <div className='flex-shrink-0'>
           <img
-              src="/images/profile.jpg"  
+              src="/images/pic.jpg"  
               alt="Profile Picture"
               className="w-48 h-48 rounded-full border-4 border-white shadow-md"
             />
