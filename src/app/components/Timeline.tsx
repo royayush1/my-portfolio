@@ -46,8 +46,8 @@ const TimelineItem: React.FC<TimelineItemProps> = ({event}) => {
                             className="w-full object-cover rounded-md mb-4"/>
 
                         )}
-                        <h3 className="text-2xl font-bold">{event.title}</h3>
-                        <p className="mt-2">{event.description}</p>
+                        <h3 className="text-2xl font-bold text-white">{event.title}</h3>
+                        <p className="mt-2 text-white">{event.description}</p>
                     </div>
                 </div>
         </motion.a>
@@ -57,7 +57,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({event}) => {
 export default function Timeline() {
     return(
         <section className="container mx-auto p-6">
-            <h2 className={`${pacifico.className} text-4xl font-bold text-center mb-12`}>My Journey</h2>
+            <h2 className={`${pacifico.className} text-4xl font-bold text-center mb-12 text-white`}>My Journey</h2>
             <div className="flex flex-col lg:flex-row">
                 <div className="relative w-full lg:w-1/4 hidden lg:block flex flex-col">
                     <img

@@ -45,7 +45,7 @@ export default function ProjectsPage() {
         </Head>
         
         <section className='container mx-auto p-6'>
-            <h1 className={`${pacifico.className} text-4xl font-bold mb-4 text-center`}>
+            <h1 className={`${pacifico.className} text-4xl font-bold mb-4 text-center text-white`}>
                 My Socials & Contact
             </h1>
             <div className='flex flex-col md:flex-row gap-8 items-center justify-evenly'>
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
                                 rel="noopener noreferrer"
                                 className='flex items-center space-x-2 hover:underline'>
                                     <span>{link.icon}</span>
-                                    <span className='text-lg font-medium'>{link.name}</span>
+                                    <span className='text-lg font-medium text-white'>{link.name}</span>
 
                             </a>
 

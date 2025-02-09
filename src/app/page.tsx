@@ -51,11 +51,11 @@ export default function HomePage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         className="bg-white rounded-lg shadow-lg p-10 mb-10 bg-gradient-to-r from-blue-500 to-purple-600">
-          <h2 className='text-4xl font-bold mb-4 text-center'>
+          <h2 className='text-4xl font-bold mb-4 text-center text-white'>
             About me
           </h2>
-          <div className='flex flex-col md:flex-row'>
-            <p className='text-lg leading-relaxed text-center md:text-left'>
+          <div className='flex flex-col md:flex-row items-center'>
+            <p className='text-lg leading-relaxed text-center md:text-left text-white'>
             Hi! I’m Ayush Roy, a passionate Software Engineer and AI/ML enthusiast currently pursuing a BSc in Computer Science with a Minor in Mathematics at the University of Alberta.
             With experience in full-stack development, machine learning, and data analytics, I love building impactful solutions that drive efficiency and enhance user experiences.
             I’ve had the opportunity to work with companies like TangoRide, Dorsal AI, and the City of Edmonton, where I’ve developed web applications, optimized NLP models, and implemented data-driven solutions that save thousands of dollars annually. 
@@ -74,7 +74,7 @@ export default function HomePage() {
       <h1 className="bg-gradient-to-r from-blue-500 to-purple-600 text-4xl inline-block text-transparent bg-clip-text font-semibold">
         Technologies I'm Proficient With
       </h1>
-      <div className='flex flex-wrap justify-center gap-20 mt-10'>
+      <div className='container mx-auto flex flex-wrap justify-center gap-20 mt-10'>
         <div className='flex flex-col items-center'>
           <FaPython size={64} className='text-purple-600'/>
           <span className='text-lg font-medium text-purple-600'>Python</span>
