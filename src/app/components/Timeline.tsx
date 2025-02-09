@@ -22,7 +22,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({event}) => {
             href={event.link}
             target="_blank"
             rel="noopener noreferrer"
-            initial={{opacity: 0, x: -50}}
+            initial={{opacity: 0.2, x: -50}}
             whileInView={{opacity: 1, x: 0}}
             viewport={{once: true, amount: 0.8}}
             transition={{duration: 0.8}}

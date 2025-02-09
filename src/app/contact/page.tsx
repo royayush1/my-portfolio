@@ -67,7 +67,7 @@ export default function ProjectsPage() {
                     <img
                         src="/images/goku.png"
                         alt="Illustration for aesthetic"
-                        className='w-full max-w-md rounded-lg object-cover'/>
+                        className='w-full max-w-md rounded-lg object-cover drop-shadow-xl'/>
             </div>
 
         </section>
