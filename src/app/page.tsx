@@ -38,11 +38,11 @@ export default function HomePage() {
             />
         </div>
         <div className='mt-6 md:mt-0 md:ml-10 text-center md:text-left'>
-          <h1 className={`${pacifico.className} text-5xl font-extrabold mb-4`}>Welcome to My Portfolio</h1>
-          <p className='text-xl leading-relaxed'>
+          <h1 className={`${pacifico.className} text-5xl font-extrabold mb-5 text-white`}>Welcome to My Portfolio</h1>
+          <p className='text-xl leading-relaxed mb-4 text-white'>
             Hi, I'm Ayush Roy. I create innovative solutions in Software Development, Data Science, and AI/ML.
-            Make your way to the projects page through the nav bar above to see what I've worked on!
           </p>
+          <span className='text-m leading-relaxed text-white'> Make your way to the Projects page through the Navigation Bar above to see what I've worked on! </span>
         </div>
       </motion.div>
     </section>
@@ -51,7 +51,7 @@ export default function HomePage() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="bg-white rounded-lg shadow-lg p-10 mb-10 bg-gradient-to-r from-blue-500 to-purple-600">
+        className="bg-white rounded-lg shadow-lg p-10 mb-2 bg-gradient-to-r from-blue-500 to-purple-600">
           <h2 className='text-4xl font-bold mb-4 text-center text-white'>
             About me
           </h2>
