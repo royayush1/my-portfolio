@@ -24,7 +24,7 @@ export const timelineData: TimelineEvent[] = [
         date: "Jan 2025 - Feb 2025",
         title: "Personal Portfolio Website",
         description: "The website you're on right now!! The website all about me :)",
-        image: "/images/portfolio.png",
+        image: "/images/portfolio1.png",
         type: "project",
         link: "https://github.com/royayush1/my-portfolio"
 
