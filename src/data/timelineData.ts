@@ -102,7 +102,7 @@ export const timelineData: TimelineEvent[] = [
         date: "Oct 2022 - May 2023",
         title: "ICard",
         description: "A mobile app that helps vendors verify eligible ICard holder for the UofA International Students' Association",
-        image: "/images/isa.png",
+        image: "/images/isa1.png",
         type: "project",
         link: "https://github.com/UofA-Blueprint/ICard"
 
