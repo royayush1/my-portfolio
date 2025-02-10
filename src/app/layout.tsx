@@ -1,6 +1,5 @@
 import './globals.css';
 import Navbar from './components/Navbar';
-import BackgroundMusic from './components/BackgroundMusic';
 
 export const metadata = {
   title: "My Portfolio",
@@ -15,7 +14,6 @@ export default function RootLayout({children} : {children: React.ReactNode}) {
       </head>
       <body className='bg-gradient-to-r from-orange-500 to-pink-400'>
         <Navbar/>
-        <BackgroundMusic/>
         <main>{children}</main>
       </body>
     </html>
