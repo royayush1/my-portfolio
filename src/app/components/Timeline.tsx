@@ -73,7 +73,7 @@ export default function Timeline() {
 
     useEffect(() => {
     const smoothUpdate = () => {
-        setOffsetY((prev) => prev + (targetOffset - prev) * 0.1);
+        setOffsetY((prev) => prev + (targetOffset - prev) * 0.075);
         requestAnimationFrame(smoothUpdate);
     };
     smoothUpdate();
