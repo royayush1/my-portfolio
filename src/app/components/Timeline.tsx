@@ -57,13 +57,21 @@ const TimelineItem: React.FC<TimelineItemProps> = ({event}) => {
 export default function Timeline() {
     const [offsetY, setOffsetY] = useState(0);
     const [targetOffset, setTargetOffset] = useState(0);
-    const scrollBottom = document.documentElement.scrollHeight - window.innerHeight;
-
+    const [luffySrc, setLuffySrc] = useState("/images/luffy1.png");
+    
     useEffect(() => {
         
       
         const handleScroll = () => {
             setTargetOffset(window.scrollY);
+            const scrollBottom =
+            document.documentElement.scrollHeight - window.innerHeight;
+        if (window.scrollY >= scrollBottom - 100) {
+            setLuffySrc("/images/luffy2.png");
+        } else {
+            setLuffySrc("/images/luffy1.png");
+        }
+
         };
       
         window.addEventListener("scroll", handleScroll);
@@ -84,7 +92,7 @@ export default function Timeline() {
             <h2 className={`${pacifico.className} text-4xl font-bold text-center mb-12 text-white`}>My Journey</h2>
             <div className="flex flex-col lg:flex-row">
                 <div className="relative w-full lg:w-1/4 hidden lg:block flex flex-col">
-                    {window.scrollY < scrollBottom - 100 ? <img
+                    {luffySrc == "/images/luffy1.png" ? <img
                         src="/images/luffy1.png"
                         alt="luffy"
                         style={
