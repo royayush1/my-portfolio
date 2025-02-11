@@ -57,7 +57,6 @@ const TimelineItem: React.FC<TimelineItemProps> = ({event}) => {
 export default function Timeline() {
     const [offsetY, setOffsetY] = useState(0);
     const [targetOffset, setTargetOffset] = useState(0);
-    const [luffySrc, setLuffySrc] = useState("/images/luffy1.png")
     const scrollBottom = document.documentElement.scrollHeight - window.innerHeight;
 
     useEffect(() => {
@@ -73,7 +72,7 @@ export default function Timeline() {
 
     useEffect(() => {
     const smoothUpdate = () => {
-        setOffsetY((prev) => prev + (targetOffset - prev) * 0.075);
+        setOffsetY((prev) => prev + (targetOffset - prev) * 0.1);
         requestAnimationFrame(smoothUpdate);
     };
     smoothUpdate();
