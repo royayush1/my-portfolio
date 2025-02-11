@@ -25,11 +25,6 @@ const socialLinks = [
         icon: <FaLinkedin size={24} className='text-blue-700'/>
     },
     {
-        name: 'Instagram',
-        url: 'https://www.instagram.com/steroyd99/',
-        icon: <FaInstagram size={24} className='text-pink-500'/>
-    },
-    {
         name: 'roy.ayush1@gmail.com',
         url: 'https://mail.google.com/mail/?view=cm&fs=1&to=roy.ayush1@gmail.com&su=SUBJECT&body=BODY',
         icon: <SiGmail size={24} className='text-red-700'/>
