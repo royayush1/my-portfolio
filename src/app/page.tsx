@@ -4,7 +4,7 @@
 
 import Head from 'next/head';
 import {motion} from 'framer-motion';
-import { FaPython, FaReact, FaJs, FaJava, FaMicrosoft, FaHtml5, FaNode, FaAws} from 'react-icons/fa6';
+import { FaPython, FaReact, FaJs, FaJava, FaMicrosoft, FaHtml5, FaNode, FaAws, FaC, FaHashtag} from 'react-icons/fa6';
 import { CgCPlusPlus } from "react-icons/cg";
 import { SiFirebase, SiTypescript, SiNextdotjs, SiLua, SiPostgresql, SiSqlite } from 'react-icons/si';
 import { DiMongodb } from "react-icons/di";
@@ -117,8 +117,19 @@ export default function HomePage() {
           <span className='text-lg font-medium text-purple-600'>AWS</span>
         </div>
         <div className='flex flex-col items-center'>
+          <FaC size={64} className='text-purple-600'/>
+          <span className='text-lg font-medium text-purple-600'>C</span>
+        </div>
+        <div className='flex flex-col items-center'>
           <CgCPlusPlus size={64} className='text-purple-600'/>
-          <span className='text-lg font-medium text-purple-600'>C/C++/C#</span>
+          <span className='text-lg font-medium text-purple-600'>C++</span>
+        </div>
+        <div className='flex flex-col items-center'>
+          <div className='flex flex-row items-center'>
+            <FaC size={64} className='text-purple-600'/>
+            <FaHashtag size={24} className='text-purple-600'/>
+          </div>
+          <span className='text-lg font-medium text-purple-600'>C#</span>
         </div>
         <div className='flex flex-col items-center'>
           <SiFirebase size={64} className='text-purple-600'/>
