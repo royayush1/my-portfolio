@@ -44,7 +44,7 @@ export default function ProjectsPage() {
                 My Socials & Contact
             </h1>
             <div className='flex flex-col md:flex-row gap-8 items-center justify-evenly'>
-                <div className='flex flex-col space-y-4'>
+                <div className='flex flex-col space-y-4 mb-40'>
                     
                     {
                         socialLinks.map((link) =>(
@@ -63,7 +63,7 @@ export default function ProjectsPage() {
                     }
                 </div>
                     <img
-                        src="/images/goku.png"
+                        src="/images/goku1.png"
                         alt="Illustration for aesthetic"
                         className='w-full max-w-md rounded-lg object-cover drop-shadow-xl'/>
             </div>

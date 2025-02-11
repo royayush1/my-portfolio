@@ -2,7 +2,7 @@
 
 "use client"
 
-import React from "react";
+import React, {useState, useEffect} from "react";
 import {motion} from "framer-motion";
 import { timelineData, TimelineEvent } from "@/data/timelineData";
 import {Pacifico} from 'next/font/google';
@@ -55,21 +55,57 @@ const TimelineItem: React.FC<TimelineItemProps> = ({event}) => {
 }
 
 export default function Timeline() {
+    const [offsetY, setOffsetY] = useState(0);
+    const [targetOffset, setTargetOffset] = useState(0);
+    const [luffySrc, setLuffySrc] = useState("/images/luffy1.png")
+    const scrollBottom = document.documentElement.scrollHeight - window.innerHeight;
+
+    useEffect(() => {
+        
+      
+        const handleScroll = () => {
+            setTargetOffset(window.scrollY);
+        };
+      
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+      }, []);
+
+    useEffect(() => {
+    const smoothUpdate = () => {
+        setOffsetY((prev) => prev + (targetOffset - prev) * 0.1);
+        requestAnimationFrame(smoothUpdate);
+    };
+    smoothUpdate();
+    }, [targetOffset]);
+      
+
     return(
         <section className="container mx-auto p-6">
             <h2 className={`${pacifico.className} text-4xl font-bold text-center mb-12 text-white`}>My Journey</h2>
             <div className="flex flex-col lg:flex-row">
                 <div className="relative w-full lg:w-1/4 hidden lg:block flex flex-col">
-                    <img
-                        src="/images/luffy.png"  
+                    {window.scrollY < scrollBottom - 100 ? <img
+                        src="/images/luffy1.png"
                         alt="luffy"
-                        className="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 w-48 h-48 drop-shadow-xl"
-                        />
-                    <img
+                        style={
+                        {transform: `translateY(${offsetY}px) translateX(-33.33%) scaleX(-1)`}
+                        }   
+                        className="absolute left-1/2 transform -translate-x-1/3 scale-x-[-1] -translate-y-1/3 z-50 w-48 drop-shadow-xl"
+                        /> : 
+                        <img
+                        src= "/images/luffy2.png"
+                        alt="luffy"
+                        style={
+                        {transform: `translateY(${offsetY}px) translateX(-33.33%) scaleX(-1)`}
+                        }   
+                        className="absolute left-1/2 transform -translate-x-1/3 scale-x-[-1] -translate-y-1/3 z-50 drop-shadow-xl"
+                        />}
+                    {/* <img
                         src="/images/slab.png"  
                         alt="slab"
                         className="absolute top-5 left-1/2 transform -translate-x-1/2 -translate-y-1 z-40 w-24 h-24 "
-                        />
+                        /> */}
                     <div className="absolute top-20 left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-300"></div>
                 </div>
                 <div className="lg:w-3/4 lg:pl-8">

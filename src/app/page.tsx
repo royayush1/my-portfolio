@@ -63,9 +63,9 @@ export default function HomePage() {
             I have been chosen as a Project/Tech Lead at the Blueprint Chapter of the University of Alberta where we develop apps that greatly aid non-profit organisations.
             </p>
             <img
-              src="/images/jeff.png"  
+              src="/images/dog1.png"  
               alt="Profile Picture"
-              className="w-48 h-48 "
+              className="h-48 drop-shadow-xl"
             />
           </div>
       </motion.div>
