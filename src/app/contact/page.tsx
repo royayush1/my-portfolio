@@ -3,7 +3,7 @@
 "use client"
 
 import Head from 'next/head';
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa6';
+import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { SiGmail } from "react-icons/si";
 import {Pacifico} from 'next/font/google';
 
