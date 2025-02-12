@@ -5,6 +5,7 @@
 import Head from 'next/head';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { SiGmail } from "react-icons/si";
+import { IoDocumentText } from "react-icons/io5";
 import {Pacifico} from 'next/font/google';
 
 const pacifico = Pacifico({
@@ -28,6 +29,12 @@ const socialLinks = [
         name: 'roy.ayush1@gmail.com',
         url: 'https://mail.google.com/mail/?view=cm&fs=1&to=roy.ayush1@gmail.com&su=SUBJECT&body=BODY',
         icon: <SiGmail size={24} className='text-red-700'/>
+    },
+    {
+        name: 'My Resume',
+        url: 'https://docs.google.com/document/d/1nbOCW5eYHfGqvOXh2Mk8El52QFt3TRQwzn2YHCS85VQ/edit?usp=sharing',
+        icon: <IoDocumentText size={24} className='text-zinc-600'/>
+        
     }
 ]
 
