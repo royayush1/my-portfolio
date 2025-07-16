@@ -32,9 +32,9 @@ export default function HomePage() {
         className='flex flex-col md:flex-row items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-lg p-10'>
         <div className='flex-shrink-0'>
           <img
-              src="/images/pic.jpg"  
+              src="/images/headshot-roy.jpeg"  
               alt="Profile Picture"
-              className="w-48 h-48 rounded-full border-4 border-white shadow-md"
+              className="w-48 h-48 rounded-full border-4 border-white shadow-md object-cover"
             />
         </div>
         <div className='mt-6 md:mt-0 md:ml-10 text-center md:text-left'>
