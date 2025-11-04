@@ -36,7 +36,7 @@ export const timelineData: TimelineEvent[] = [
         description: "A Next.js + TypeScript book recommender that embeds your tastes with OpenAI, retrieves nearest matches from Supabase (Postgres + pgvector), and explains picks with GPT-4.1—deployed on Vercel with a Tailwind UI",
         image: "/images/biblio.png",
         type: "project",
-        link: "hhttps://bibliorecs.vercel.app"
+        link: "https://bibliorecs.vercel.app"
 
     },
 
